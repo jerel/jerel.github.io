@@ -1,18 +1,21 @@
 <nav>
-  <h1>Hi.</h1>
-  <a href="/">
-    {% if site.data.theme.social.gravatar %}
-    <img src="http://www.gravatar.com/avatar/{{ site.data.theme.social.gravatar }}?s=200" id="gravatar" alt="My photo"/>
-    {% else %}
-    <img src="/logo.png" id="logo" alt="Blog logo"/>
-    {% endif %}
-  </a>
-  <h2>I'm <a href="/">{{ site.data.theme.name }}</a>.</h2>
+  <ul>
+    <li><a href="/">Writing</a></li>
+    <li><a href="/skills">Skills</a></li>
+    <li><a href="/code">Code</a></li>
+    <li><a href="/contact">Contact</a></li>
+  </ul>
+
+  <h4>About Me</h4>
   <div id="bio">
-    <p>A brief bio or something witty.</p>
     <p>
-      Edit me in <code>_includes/sidebar.html</code>
+      <img src="/avatar.jpg" width="70" alt="Blog logo"/>
+      I'm an advocate of the modern web and open source software. I write mostly Elixir, JavaScript, and Python with my current focus on Progressive Web Apps and realtime APIs.
     </p>
+  </div>
+  <h4>Let's Talk</h4>
+  <div>
+    <p>Many businesses waste money by using poorly designed or ill fitting software. Get in touch and let's see if I can increase your efficiency or revenue with custom software.</p>
   </div>
   <div id="social">
     {% include social.html %}

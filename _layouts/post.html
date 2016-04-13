@@ -3,7 +3,7 @@ layout: default
 ---
 
 <p class="meta">
-  {{ page.date | date: "%B %d, %Y" }} 
+  {{ page.date | date: "%B %d, %Y" }}
   <a href="/">
     <i class="home fa fa-home"></i>
   </a>
@@ -15,13 +15,36 @@ layout: default
   {{ content }}
 </div>
 
+<ul class="tags">
+{% for category in page.categories %}
+  <li class="category"><a href="/blog/categories/{{category | downcase | replace:" ","-" }}">{{category | downcase | replace:" ","-" }}</a></li>
+{% endfor %}
+
+{% for tag in page.tags %}
+  <li class="tag"><a href="/blog/tags/{{tag | downcase | replace:" ","-" }}">{{tag | downcase | replace:" ","-" }}</a></li>
+{% endfor %}
+</ul>
+
+<hr>
+
 <div id="related">
   <h3>Related Posts</h3>
   <ul class="posts">
-    {% for post in site.related_posts limit:3 %}
-    <li>
-      <span>{{ post.date | date_to_string }} &raquo;</span> <a href="{{ post.url }}">{{ post.title }}</a>
-    </li>
+    {% assign related=0 %}
+    {% for post in site.posts %}
+      {% assign counter=0 %}
+      {% for tag in page.tags %}
+        {% if post.tags contains tag %}
+          {% if counter == 0 and related <= 5 and post.url != page.url %}
+            {% assign related=related | plus:1 %}
+            <li>
+              <span>{{ post.date | date_to_string }} &raquo;</span> <a href="{{ post.url }}">{{ post.title }}</a>
+            </li>
+            {% assign counter=counter | plus:1 %}
+          {% endif %}
+        {% endif %}
+      {% endfor %}
     {% endfor %}
   </ul>
 </div>
+
