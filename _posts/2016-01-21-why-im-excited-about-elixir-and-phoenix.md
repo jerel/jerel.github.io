@@ -4,8 +4,10 @@ published: true
 title: Why I'm excited about Elixir and Phoenix
 date: 2016-01-21 02:10:00
 categories:
+- web-development
 tags:
-
+- elixir
+- phoenix
 ---
 
 For the last couple years I&#39;ve been writing Python for my server side applications. I really enjoy Django and Django REST Framework and how they enable me to build rapidly. However the last few months I&#39;ve been studying the Elixir language and its main framework, [Phoenix](http://www.phoenixframework.org/). This post explains why I&#39;m betting heavily on it for the future.
