@@ -16,6 +16,7 @@ social:
   #linkedin: philipjagielski
   #gplus: 110552447039675960964
   #gravatar: 86e6ff8f75f9daef42d53b7f8002fd95
+  #flickr: johndoe
 
 # "Hi, I'm _______"
 name: Matt Swanson
@@ -27,3 +28,6 @@ google_analytics_key: UA-xxxx-x
 
 # Toggle "Postings are my own" disclaimer in footer
 show_disclaimer: true
+
+# Toggle link/icon to view atom feed (/atom.xml) in sidebar
+show_atom_feed: true
