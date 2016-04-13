@@ -1,5 +1,6 @@
 ---
 layout: default
+title: Code I've written
 ---
 
 ## A few things I've released

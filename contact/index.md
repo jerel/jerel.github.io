@@ -1,5 +1,6 @@
 ---
 layout: default
+title: Contact me
 ---
 
 ## Send me an email

@@ -1,5 +1,6 @@
 ---
 layout: default
+title: Technologies I specialize in and the tools I use
 ---
 
 ### Things I specialize in
