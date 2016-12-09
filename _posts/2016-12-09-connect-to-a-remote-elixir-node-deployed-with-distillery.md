@@ -15,7 +15,7 @@ When building Elixir apps with Distillery I don't install Elixir on the server a
 ---
 
 
-I found that I always had to google and fiddle around a bit to connect Observer to a running app so decided to document it clearly once and for all.
+I found that I always had to google and fiddle around a bit to connect Observer to a running app so decided to document it for myself and others.
 
 #### The Code
 
@@ -29,7 +29,7 @@ tcp        0      0 0.0.0.0:39566           0.0.0.0:*               LISTEN      
 tcp        0      0 0.0.0.0:5432            0.0.0.0:*               LISTEN      3548/postgres
 tcp        0      0 0.0.0.0:5000            0.0.0.0:*               LISTEN      3439/beam.smp
 
-# on local machine use ports from top two rows above create two tunnels (3rd row is postgres and 4th is web app)
+# on local machine use ports from top two rows above to create two tunnels (3rd row is postgres and 4th is web app)
 me@local:~$ ssh -L 4369:localhost:4369 -L 39566:localhost:39566 user@example.com
 user@app1:~$
 
