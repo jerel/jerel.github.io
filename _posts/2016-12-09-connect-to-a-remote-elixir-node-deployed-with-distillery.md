@@ -41,6 +41,8 @@ iex(debug@127.0.0.1)1> :observer.start
 # in the Observer window that opens you can now select the remote node from the Nodes menu
 ```
 
+#### Results
+
 ![elixir observer](/assets/blog/observer.png)
 
 If you have a better / more concise way of connecting let me know.
