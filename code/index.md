@@ -22,6 +22,7 @@ title: Code I've written
 
 Not a complete list due to NDAs, some of them being internal projects, etc.
 
-* HRS-MAT - lead developer on a project to build a psychometric tool for assessing IQ.
+* [GeoRelay](https://georelay.com) - founder and lead developer on a realtime telematics platform
+* HRS-MAT - lead developer on a project to build a psychometric tool for assessing IQ
 * [Aviation by Awarnys](http://aviation.awarnys.com) - aviation accounting
 * [Flightclubs](http://flightclubs.com/clubs/map) - an aviation community
